@@ -1,18 +1,55 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { environment } from 'src/environments/environment';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavComponent } from './nav/nav.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { JoinUsComponent } from './join-us/join-us.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FirebaseService } from './services/firebase.service';
+import { ProductModule } from './product/product.module';
+import { FormsModule } from '@angular/forms';
+
+const appRoutes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'joinus', component: JoinUsComponent },
+  { path: 'signup', component: SignUpComponent },
+];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavComponent,
+    HomeComponent,
+    AboutComponent,
+    ContactComponent,
+    JoinUsComponent,
+    SignUpComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
+    HttpClientModule,
+    AngularFireAuthModule,
+    NgbModule,
+    FormsModule,
+    RouterModule.forRoot(appRoutes),
+    ProductModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [FirebaseService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

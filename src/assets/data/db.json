@@ -1,0 +1,115 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "productName": "Fossil ME3181 Analog Watch ",
+      "categoryId": 1,
+      "description": "Fossil is an American watch and lifestyle company, creatively rooted in authentic vintage and classic design. When the clean lines of the mid-century meet the modern looks of today, the result is key items that represent the best of what we stand for: traditional watches created in fresh hues and materials.",
+      "price": "18,495",
+      "productImg": "http://localhost:4200/assets/prod-img/w101.jpeg",
+      "rating": 4,
+      "review": "150",
+      "brand": "Fossil"
+    },
+    {
+      "id": 2,
+      "productName": "Montblanc Sunglasses",
+      "categoryId": 2,
+      "description": "Shipping charges are calculated based on the number of units, distance and delivery date. For Plus customers, shipping charges are free. For non-Plus customers, if the total value of FAssured items is more than Rs.500, shipping charges are free. If the total value of FAssured items is less than Rs.500, shipping charges = Rs.40 per unit * For faster delivery, shipping charges will be applicable.",
+      "price": "16,150",
+      "productImg": "http://localhost:4200/assets/prod-img/s101.jpeg",
+      "rating": 2,
+      "review": "150",
+      "brand": "Montblanc"
+    },
+    {
+      "id": 3,
+      "productName": "Cole haan Men",
+      "categoryId": 3,
+      "description": "Cole Haan is an American brand of men's and women's footwear and accessories that serves markets worldwide. The company was founded in Chicago, Illinois in 1928. Cole Haan currently has its headquarters in both New York City and Greenland, New Hampshire, United States ",
+      "price": "8,683",
+      "productImg": "http://localhost:4200/assets/prod-img/h101.jpeg",
+      "rating": 3,
+      "review": "150",
+      "brand": "Cole Haan"
+    },
+    {
+      "id": 4,
+      "productName": "Tommy Hilfiger TH1791426W Analog Watch",
+      "categoryId": 1,
+      "description": "Tommy Hilfiger, formerly known as Tommy Hilfiger Corporation and Tommy Hilfiger Inc., is an American premium clothing brand, manufacturing apparel, footwear, accessories, fragrances and home furnishings",
+      "price": "11,995",
+      "productImg": "http://localhost:4200/assets/prod-img/w202.jpeg",
+      "rating": 4,
+      "review": "150",
+      "brand": "Tommy Hilfiger"
+    },
+    {
+      "id": 5,
+      "productName": "Oakley Sports Sunglass ",
+      "categoryId": 2,
+      "description": "This iOakley, Inc., based in Lake Forest, California, and a subsidiary of Italian corporate giant Luxottica based in Milan, designs, develops and manufactures sports performance equipment and lifestyle pieces including sunglasses, sports visors, ski/snowboard goggles, watches, apparel, backpacks, shoes, optical frames, and other accessories. Most items are designed in house at their head office, but some countries hold exclusive designs relevant to their market. Oakley currently holds more than 600 patents for eyewear, materials, and performance gears my description",
+      "price": "14,931",
+      "productImg": "http://localhost:4200/assets/prod-img/s203.jpeg",
+      "rating": 5,
+      "review": "150",
+      "brand": "Oakley"
+    },
+    {
+      "id": 6,
+      "productName": "Nike Court Royale Shoe Sneakers",
+      "categoryId": 3,
+      "description": "Nike, Inc. is an American multinational corporation that is engaged in the design, development, manufacturing, and worldwide marketing and sales of footwear, apparel, equipment, accessories, and services. The company is headquartered near Beaverton, Oregon, in the Portland metropolitan area.",
+      "price": "3,056",
+      "productImg": "http://localhost:4200/assets/prod-img/h201.jpeg",
+      "rating": 1,
+      "review": "150",
+      "brand": "Nike"
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "Watch"
+    },
+    {
+      "id": 2,
+      "name": "Sunglasses"
+    },
+    {
+      "id": 3,
+      "name": "Shoes"
+    }
+  ],
+  "idealFor": [
+    {
+      "id": 1,
+      "gender": "Men"
+    },
+    {
+      "id": 2,
+      "gender": "Women"
+    },
+    {
+      "id": 3,
+      "gender": "Kids"
+    }
+  ],
+  "newsletter": [
+    {
+      "name": "ashutosh rane",
+      "email": "ashu@gmail.com",
+      "id": 1
+    },
+    {
+      "name": "ashu rane",
+      "email": "ashu09@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "",
+      "email": "",
+      "id": 3
+    }
+  ]
+}

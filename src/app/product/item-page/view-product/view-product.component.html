@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="col-lg-12">
+    <div class="card mt-4">
+      <img
+        class="card-img-top img-fluid"
+        src="{{ productData.productImg }}"
+        alt=""
+        style="height: 50vh; object-fit: contain"
+      />
+      <div class="card-body">
+        <br />
+        <h1 class="card-title">{{ productData.productName }}</h1>
+        <br />
+        <h4>Rs {{ productData.price }} /-</h4>
+        <p class="card-text">
+          {{ productData.description }}
+        </p>
+        <div *ngIf="productData.rating === 1">
+          1.0
+          <span class="text-warning">
+            &#9733; &#9734; &#9734; &#9734; &#9734;
+          </span>
+        </div>
+        <div *ngIf="productData.rating === 2">
+          2.0
+          <span class="text-warning">
+            &#9733; &#9733; &#9734; &#9734; &#9734;
+          </span>
+        </div>
+        <div *ngIf="productData.rating === 3">
+          3.0
+          <span class="text-warning">
+            &#9733; &#9733; &#9733; &#9734; &#9734;
+          </span>
+        </div>
+        <div *ngIf="productData.rating === 4">
+          4.0
+          <span class="text-warning">
+            &#9733; &#9733; &#9733; &#9733; &#9734;
+          </span>
+        </div>
+        <div *ngIf="productData.rating === 5">
+          5.0
+          <span class="text-warning">
+            &#9733; &#9733; &#9733; &#9733; &#9733;
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

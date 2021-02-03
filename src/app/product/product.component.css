@@ -1,0 +1,34 @@
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.carousel-back1 {
+  background-image: url(../../assets/images/photo-1.jpeg);
+}
+
+.carousel-back2 {
+  background-image: url(../../assets/images/photo-2.jpeg);
+}
+
+.carousel-back3 {
+  background-image: url(../../assets/images/photo-4.jpeg);
+}
+
+.carousel-back1,
+.carousel-back2,
+.carousel-back3 {
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

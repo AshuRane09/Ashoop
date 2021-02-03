@@ -1,0 +1,52 @@
+<!-- Page Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-2">
+      <app-category></app-category>
+    </div>
+
+    <div class="col-lg-10">
+      <!-- carousel -->
+      <div class="row mt-4">
+        <div class="col-lg-4 col-md-6 mb-4" *ngFor="let product of productList">
+          <div class="card h-100">
+            <a routerLink="/viewproduct/{{ product.id }}">
+              <img class="card-img-top" src="{{ product.productImg }}" />
+            </a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a routerLink="/viewproduct/{{ product.id }}">
+                  {{ product.productName }}
+                </a>
+              </h4>
+              <h5>Rs {{ product.price }} /-</h5>
+              <div *ngIf="product.rating === 1">
+                <small class="text-muted" [innerHTML]="rating1"></small>
+              </div>
+              <div *ngIf="product.rating === 2">
+                <small class="text-muted" [innerHTML]="rating2"></small>
+              </div>
+              <div *ngIf="product.rating === 3">
+                <small class="text-muted" [innerHTML]="rating3"></small>
+              </div>
+              <div *ngIf="product.rating === 4">
+                <small class="text-muted" [innerHTML]="rating4"></small>
+              </div>
+              <div *ngIf="product.rating === 5">
+                <small class="text-muted" [innerHTML]="rating5"></small>
+              </div>
+            </div>
+
+            <a
+              class="card-footer bg-primary"
+              routerLink="/viewproduct/{{ product.id }}"
+              style="text-decoration: none; color: azure"
+            >
+              View
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
